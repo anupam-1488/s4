@@ -1,0 +1,19 @@
+
+export const public_url = "boc-public/";
+export const ERROR_MSG = "Required";
+export const ALPHABETS_ONLY_Msg = "Enter Only letters";
+export const NUMERIC_Msg = "Enter Only Numbers";
+export const Aadhaar_Msg = "Enter Valid Aadhaar No. !";
+export const Mobile_Msg = "Enter Valid Mobile No. !";
+export const Addres_Msg = "Dont Use Special Characters";
+export const IFSC_VALIDATION  = /^[A-Z]{4}0[A-Z 0-9]{6}$/;
+export const AADHAR_VALIDATION = /^[1-9]{1}[0-9]{11}$/
+export const MOBILE_VALIDATION = /^[6-9]{1}[0-9]{9}$/;
+export const PAN_VALIDATION = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+export const PINCODE  = /^[1-9]{1}[0-9]{5}$/;
+export const ONLY_NUMERIC = /^[0-9]+$/;
+export const ONLY_CAPS = /^[A-Z\s]+$/;
+export const NUMERIC = /^\d+$/;
+export const ALPHABETS_ONLY = /^[aA-zZ\s]+$/;
+export const STARTS_WITH_NO_WHITESPACE = /^(?!\s+$).*/;
+export const AddresRemarks = /^[0-9a-zA-Z\s,.$%#@-]+$/;

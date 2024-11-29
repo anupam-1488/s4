@@ -1,0 +1,541 @@
+/* Top Bar */
+.top-bar {
+    background-color: #0066cc; /* Medical blue */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-text {
+    font-family: 'cursive';
+    font-size: 30px;
+    color: white;
+  }
+  
+  /* Navigation Menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Profile Icon */
+  .profile-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Popup */
+  .popup {
+    display: none;
+  }
+  
+  .popup.visible {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    max-width: 50%;
+    margin-left: 73vw
+  }
+  .popup {
+  position: fixed; /* Ensures the popup stays in place when scrolling */
+  top: 70%;
+  left: 100%;
+  transform: translate(8%, 3%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001; /* Ensure popup is above other content */
+  /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); */
+  width: 800px;
+  max-width: 90%;
+}
+
+/* Background overlay */
+    .popup-overlay {
+    position: center;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: "#ffff"; /* Semi-transparent background */
+    z-index: 1000; /* Ensure the overlay is below the popup but above page content */
+    }
+  
+  /* Form Container */
+  .form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+  }
+  
+  /* Form Header */
+  .form-header {
+    color:#ffff ;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color:#0066cc ;
+    border-radius: 10px;
+  }
+  
+  /* Form Fields */
+  .form-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Form Button */
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Form Text */
+  .form-text {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .form-link {
+    color: #0066cc;
+    cursor: pointer;
+  }
+  
+/* ///////////////////FOOTER//////////////////////// */
+
+/* Footer Styles */
+.footer {
+    background-color: #0066cc; /* Medical blue to match the header */
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Top Section */
+  .footer-top {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .footer-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .footer-text h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .footer-text p {
+    font-size: 14px;
+  }
+  
+  /* Footer Middle Section */
+  .footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .footer-logo {
+    height: 100px;
+  }
+  
+  .footer-office, .footer-contact {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .footer-office h4, .footer-contact h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-office p, .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+  
+  .footer-company {
+    flex: 1;
+  }
+  
+  .footer-company h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-company ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-company ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-company ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-company ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Map Section */
+  .footer-map {
+    flex: 1;
+    padding: 0 100px 10px 10px;
+    
+  }
+  
+  /* Social Media Links */
+  .footer-social {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .footer-social a {
+    font-size: 35px;
+    margin-left: 15px;
+    color: white;
+  }
+  
+  .footer-social a:hover {
+    color: lightgray;
+  }
+  
+
+  .event-container {
+    padding: 20px;
+  }
+  
+  .event-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004080;
+  }
+  
+  .event-row {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+  }
+  
+  .date-box {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .date-box .month {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .date-box .day {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .date-box .year {
+    display: block;
+    font-size: 16px;
+  }
+  
+  .event-location {
+    color: #6c757d;
+  }
+  
+  .event-description {
+    font-size: 14px;
+    color: #5a5a5a;
+  }
+  
+  .event-card {
+    border: none;
+    transition: transform 0.2s;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .event-image {
+    border-radius: 8px;
+  }
+
+  .contact-page {
+  padding: 30px;
+}
+
+.contact-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004080;
+}
+
+.contact-subtitle {
+  color: #6c757d;
+}
+
+.contact-form-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-textarea {
+  border-radius: 8px;
+}
+
+.contact-button {
+  width: 100%;
+  background-color: #004080;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.contact-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.contact-card-title {
+  font-size: 18px;
+  color: #004080;
+}
+
+
+
+/* src/ProductPage.css */
+.product-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Arial', sans-serif;
+}
+
+.product-image {
+    flex: 1;
+    max-width: 500px; /* Set max-width for the image container */
+    height: 500px; /* Set fixed height for the image container */
+    overflow: hidden; /* Hide overflow if the image exceeds the container */
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto; /* Ensure the image retains its aspect ratio */
+    max-height: 100%; /* Limit the image height to the container's height */
+}
+
+.product-details {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.in-stock {
+    color: green;
+    font-weight: bold;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.discount-info {
+    margin: 10px 0;
+}
+
+.btn-download {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #0056b3;
+}
+
+.size-selection,
+.quantity-selection {
+    margin-bottom: 20px;
+}
+
+.size-selection select,
+.quantity-selection input {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-add-to-cart {
+    padding: 10px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #218838;
+}
+
+
+/* styles.css */
+
+.welcome {
+    text-align: center;
+    perspective: 1000px; /* Create a 3D space */
+    overflow: hidden; /* Hide overflow */
+}
+
+.welcome h1,
+.welcome h2,
+.welcome p {
+    animation: moveIn 1.5s ease-out forwards; /* Animation for entry */
+    transform: translateZ(50px); /* 3D effect */
+}
+
+.welcome h1 {
+    animation-delay: 0.2s; /* Delay for h1 */
+}
+
+.welcome h2 {
+    animation-delay: 0.4s; /* Delay for h2 */
+}
+
+.welcome p {
+    animation-delay: 0.6s; /* Delay for paragraphs */
+}
+
+@keyframes moveIn {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(30px); /* Move down */
+    }
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .username {
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .user-dropdown .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: black;
+  }
+  
